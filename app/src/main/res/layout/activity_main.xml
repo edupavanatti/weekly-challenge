@@ -9,7 +9,7 @@
     <include layout="@layout/button_model"
         android:layout_width="@dimen/button_width"
         android:layout_height="@dimen/button_height"
-        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
         android:layout_marginRight="10dp"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginLeft="10dp"

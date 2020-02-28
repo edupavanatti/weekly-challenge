@@ -10,6 +10,7 @@
         android:fontFamily="@font/roboto_medium"
         android:text="@string/button_text"
         android:singleLine="true"
+        android:scrollHorizontally="true"
         android:textAllCaps="false"
         android:textColor="@color/buttonTextColor"
         android:background="@drawable/custom_button"
