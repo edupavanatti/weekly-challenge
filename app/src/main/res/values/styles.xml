@@ -2,10 +2,34 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Default button style. -->
+    <style name="DefaultButtonTheme" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">@dimen/button_width</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:textColor">@color/defaultButtonTextColor</item>
+        <item name="android:background">@drawable/default_button_background</item>
+        <item name="android:text">@string/default_button_text</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:freezesText">true</item>
+    </style>
+
+    <!-- New button style. -->
+    <style name="NewButtonTheme" parent="DefaultButtonTheme">
+        <item name="android:text">This is a new button.</item>
+        <item name="android:textColor">@color/newButtonTextColor</item>
+        <item name="android:background">@drawable/new_button_background</item>
     </style>
 
 </resources>

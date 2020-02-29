@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <!-- Buttons dimension values. -->
     <dimen name="button_width">300dp</dimen>
     <dimen name="button_height">100dp</dimen>
+
+    <!-- Buttons text size value. -->
+    <dimen name="text_size">50sp</dimen>
 </resources>

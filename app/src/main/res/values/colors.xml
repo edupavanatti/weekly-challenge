@@ -3,6 +3,10 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
-    <color name="buttonTextColor">#50D691</color>
-    <color name="buttonBackgroundColor">#471D7C</color>
+
+    <!-- Buttons color values -->
+    <color name="defaultButtonTextColor">#50D691</color>
+    <color name="defaultButtonBackgroundColor">#471D7C</color>
+    <color name="newButtonTextColor">#471D7C</color>
+    <color name="newButtonBackgroundColor">#50D691</color>
 </resources>
