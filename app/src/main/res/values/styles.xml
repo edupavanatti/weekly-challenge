@@ -27,7 +27,7 @@
 
     <!-- New button style. -->
     <style name="NewButtonTheme" parent="DefaultButtonTheme">
-        <item name="android:text">This is a new button.</item>
+        <item name="android:text">@string/new_button_text</item>
         <item name="android:textColor">@color/newButtonTextColor</item>
         <item name="android:background">@drawable/new_button_background</item>
     </style>

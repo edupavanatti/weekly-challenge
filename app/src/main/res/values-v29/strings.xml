@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Weekly Challenge</string>
+
+    <!-- Buttons text values. -->
+    <string name="default_button_text">Your device is running Android Q.</string>
+    <string name="new_button_text">Android Q is the latest Android version.</string>
+</resources>

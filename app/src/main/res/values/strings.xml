@@ -2,9 +2,6 @@
     <string name="app_name">Weekly Challenge</string>
 
     <!-- Buttons text values. -->
-    <string name="default_button_text">Eduardo Fonseca Pavanatti</string>
-    <string name="new_button_text_before_Android_Q">This device is running an outdated Android
-    version.</string>
-    <string name="new_button_text_after_Android_Q">This device is running the latest Android
-    version.</string>
+    <string name="default_button_text">Your device is set to an unsupported language.</string>
+    <string name="new_button_text">Supported languages: english and portuguese.</string>
 </resources>

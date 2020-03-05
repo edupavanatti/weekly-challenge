@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Desafio Semanal</string>
+
+    <!-- Buttons text values. -->
+    <string name="default_button_text">Seu device está configurado em português.</string>
+    <string name="new_button_text">Sua versão do Android está desatualizada.</string>
+</resources>
