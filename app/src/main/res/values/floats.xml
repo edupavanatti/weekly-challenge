@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Guidelines position values (in percentage) -->
+    <item format="float" type="dimen" name="upper_guideline_position">0.33</item>
+    <item format="float" type="dimen" name="lower_guideline_position">0.66</item>
+</resources>

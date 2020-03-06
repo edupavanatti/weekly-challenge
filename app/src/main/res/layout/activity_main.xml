@@ -9,9 +9,9 @@
     <include layout="@layout/default_button_model"
         android:layout_width="@dimen/button_width"
         android:layout_height="@dimen/button_height"
-        android:layout_marginBottom="20dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="@dimen/button_margin"
+        android:layout_marginRight="@dimen/button_margin"
+        android:layout_marginLeft="@dimen/button_margin"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintBottom_toTopOf="@id/upper_guideline"/>
@@ -19,8 +19,8 @@
     <include layout="@layout/default_button_model"
         android:layout_width="@dimen/button_width"
         android:layout_height="@dimen/button_height"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginRight="@dimen/button_margin"
+        android:layout_marginLeft="@dimen/button_margin"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/upper_guideline"
@@ -29,9 +29,9 @@
     <include layout="@layout/new_button_model"
         android:layout_width="@dimen/button_width"
         android:layout_height="@dimen/button_height"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginTop="@dimen/button_margin"
+        android:layout_marginRight="@dimen/button_margin"
+        android:layout_marginLeft="@dimen/button_margin"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/lower_guideline"/>
@@ -41,13 +41,13 @@
        android:layout_height="wrap_content"
        android:id="@+id/upper_guideline"
        android:orientation="horizontal"
-       app:layout_constraintGuide_percent="0.33"/>
+       app:layout_constraintGuide_percent="@dimen/upper_guideline_position"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/lower_guideline"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.66"/>
+        app:layout_constraintGuide_percent="@dimen/lower_guideline_position"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
