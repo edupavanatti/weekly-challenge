@@ -4,5 +4,15 @@
 
     <!-- Buttons text values. -->
     <string name="default_button_text">Your device language is set to english.</string>
-    <string name="new_button_text">Your Android version is outdated.</string>
+    <string name="new_button_text">Your device is running an outdated Android version.</string>
+    <string name="new_button_text_v29">Your device is running the latest Android version.</string>
+
+    <!-- Application Toast values. -->
+    <string name="toast_message">First button pressed.</string>
+
+    <!-- Application Dialog values. -->
+    <string name="dialog_title">Test Dialog</string>
+    <string name="dialog_message">Second button pressed.</string>
+    <string name="dialog_positive_button">OK</string>
+
 </resources>

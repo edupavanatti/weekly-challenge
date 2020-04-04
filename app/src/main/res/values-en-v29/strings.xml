@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">Weekly Challenge</string>
-
-    <!-- Buttons text values. -->
-    <string name="default_button_text">Your device language is set to english.</string>
-    <string name="new_button_text">Your Android version is updated.</string>
-</resources>

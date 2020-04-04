@@ -8,7 +8,7 @@
     </style>
 
     <!-- Default button style. -->
-    <style name="DefaultButtonTheme" parent="Widget.AppCompat.Button">
+    <style name="DefaultButtonStyle" parent="Widget.AppCompat.Button">
         <item name="android:layout_width">@dimen/button_width</item>
         <item name="android:layout_height">@dimen/button_height</item>
         <item name="android:fontFamily">@font/roboto_medium</item>
@@ -20,16 +20,27 @@
         <item name="android:background">@drawable/default_button_background</item>
         <item name="android:text">@string/default_button_text</item>
         <item name="android:ellipsize">marquee</item>
-        <item name="android:marqueeRepeatLimit">marquee_forever</item>
-        <item name="android:focusableInTouchMode">true</item>
-        <item name="android:freezesText">true</item>
     </style>
 
     <!-- New button style. -->
-    <style name="NewButtonTheme" parent="DefaultButtonTheme">
-        <item name="android:text">@string/new_button_text</item>
+    <style name="NewButtonStyle" parent="DefaultButtonStyle">
+        <item name="android:text">@string/new_button_text_value</item>
         <item name="android:textColor">@color/newButtonTextColor</item>
         <item name="android:background">@drawable/new_button_background</item>
+    </style>
+
+    <!-- Button holder style. -->
+    <style name="ButtonHolderStyle" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:layout_width">@dimen/new_layout_width</item>
+        <item name="android:layout_height">@dimen/new_layout_height</item>
+        <item name="android:background">@drawable/new_button_background</item>
+    </style>
+
+    <!-- Margin task button style. -->
+    <style name="MarginButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">@dimen/button_width</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:background">@drawable/default_button_background</item>
     </style>
 
 </resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MarginActivity">
+
+    <!-- Adds a frame to hold the margin buttons -->
+    <FrameLayout style="@style/ButtonHolderStyle"
+        android:layout_marginLeft="@dimen/new_layout_margin_right_left"
+        android:layout_marginRight="@dimen/new_layout_margin_right_left"
+        android:layout_marginTop="@dimen/new_layout_margin_top_bottom"
+        android:layout_marginBottom="@dimen/new_layout_margin_top_bottom"
+        android:paddingTop="@dimen/new_layout_padding"
+        android:paddingBottom="@dimen/new_layout_padding"
+        android:paddingRight="@dimen/new_layout_padding"
+        android:paddingLeft="@dimen/new_layout_padding"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+        <include layout="@layout/margin_buttons"/>
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

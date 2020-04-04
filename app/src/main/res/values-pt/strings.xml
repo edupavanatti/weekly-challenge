@@ -5,4 +5,14 @@
     <!-- Buttons text values. -->
     <string name="default_button_text">Seu device está configurado em português.</string>
     <string name="new_button_text">Sua versão do Android está desatualizada.</string>
+    <string name="new_button_text_v29">Seu device está rodando a última versão do Android.</string>
+
+    <!-- Application Toast values. -->
+    <string name="toast_message">Primeiro botão pressionado.</string>
+
+    <!-- Application Dialog values. -->
+    <string name="dialog_title">Dialogo de Teste</string>
+    <string name="dialog_message">Segundo botão pressionado.</string>
+    <string name="dialog_positive_button">OK</string>
+
 </resources>

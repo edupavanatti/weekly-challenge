@@ -3,6 +3,5 @@
     <string name="app_name">Weekly Challenge</string>
 
     <!-- Buttons text values. -->
-    <string name="default_button_text">Your device is running Android Q.</string>
-    <string name="new_button_text">Android Q is the latest Android version.</string>
+    <string name="new_button_text_value">@string/new_button_text_v29</string>
 </resources>

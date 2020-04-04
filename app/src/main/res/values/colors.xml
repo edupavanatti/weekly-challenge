@@ -4,9 +4,19 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
 
-    <!-- Buttons color values -->
+    <!-- Buttons color values. -->
     <color name="defaultButtonTextColor">#50D691</color>
     <color name="defaultButtonBackgroundColor">#471D7C</color>
     <color name="newButtonTextColor">#471D7C</color>
     <color name="newButtonBackgroundColor">#50D691</color>
+    <color name="defaultButtonBackgroundColorNightMode">#170430</color>
+    <color name="newButtonBackgroundColorNightMode">#0C6136</color>
+    <color name="newButtonBackgroundColorNightModeQ">#BDD8C8</color>
+
+    <!-- Dialog color values. -->
+    <color name="dialogBackground">#FFFCFCFC</color>
+    <color name="dialogStroke">#FFD6D6D6</color>
+    <color name="dialogBackgroundNightMode">#252525</color>
+    <color name="dialogStrokeNightMode">#26D4D4D4</color>
+
 </resources>

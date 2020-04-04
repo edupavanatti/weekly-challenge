@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Buttons color values. -->
+    <color name="defaultButtonBackgroundColor">@color/defaultButtonBackgroundColorNightMode</color>
+    <color name="newButtonBackgroundColor">@color/newButtonBackgroundColorNightMode</color>
+
+</resources>

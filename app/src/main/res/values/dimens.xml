@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <!-- Buttons dimension values. -->
     <dimen name="button_width">300dp</dimen>
     <dimen name="button_height">100dp</dimen>
@@ -9,4 +10,18 @@
 
     <!-- Buttons margin value. -->
     <dimen name="button_margin">20dp</dimen>
+
+    <!-- Dialog background values. -->
+    <dimen name="dialog_background_stroke">1dp</dimen>
+    <dimen name="dialog_background_corner_radius">26dp</dimen>
+
+    <!-- New layout dimension values. -->
+    <dimen name="new_layout_width">300dp</dimen>
+    <dimen name="new_layout_height">500dp</dimen>
+
+    <!-- New layout margin/padding values. -->
+    <dimen name="new_layout_margin_right_left">50dp</dimen>
+    <dimen name="new_layout_margin_top_bottom">100dp</dimen>
+    <dimen name="new_layout_padding">10dp</dimen>
+
 </resources>
