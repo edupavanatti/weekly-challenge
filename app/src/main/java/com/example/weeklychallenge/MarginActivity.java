@@ -6,6 +6,9 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
+/**
+ * An Activity created to demonstrate the difference between margin and padding.
+ */
 public class MarginActivity extends AppCompatActivity {
 
     @Override

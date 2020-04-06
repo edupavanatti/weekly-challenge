@@ -44,7 +44,7 @@ public class DialogFactory {
     }
 
     /**
-     *
+     * Method to configure a Dialog following the One UI standards.
      *
      * @param dialog The Dialog which will be configured.
      * @param context The Context that will be used to configure the Dialog.

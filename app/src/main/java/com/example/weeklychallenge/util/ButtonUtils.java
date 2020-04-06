@@ -1,7 +1,5 @@
 package com.example.weeklychallenge.util;
 
-import androidx.annotation.NonNull;
-
 import com.example.weeklychallenge.R;
 
 /**
@@ -10,25 +8,28 @@ import com.example.weeklychallenge.R;
 public class ButtonUtils {
 
     /**
-     *
+     * The ID related to an invalid button.
      */
     private static final int INVALID_BUTTON_ID = 0;
 
     /**
-     *
+     * The ID related to the first button.
      */
     private static final int FIRST_BUTTON_ID = R.id.firstButton;
 
     /**
-     *
+     * The ID related to the second button.
      */
     private static final int SECOND_BUTTON_ID = R.id.secondButton;
 
     /**
-     *
+     * The ID related to the third button.
      */
     private static final int THIRD_BUTTON_ID = R.id.thirdButton;
 
+    /**
+     * Enum containing each button used by the MainActivity.
+     */
     public enum MainActivityButton {
         INVALID_BUTTON(INVALID_BUTTON_ID),
         FIRST_BUTTON(FIRST_BUTTON_ID),
@@ -40,7 +41,6 @@ public class ButtonUtils {
             mID = id;
         }
 
-        @NonNull
         public static MainActivityButton forCode(final int code) {
             for (final MainActivityButton mainActivityButton : MainActivityButton.values()) {
                 if (mainActivityButton.mID == code) {

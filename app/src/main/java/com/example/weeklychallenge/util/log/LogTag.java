@@ -1,5 +1,6 @@
 package com.example.weeklychallenge.util.log;
 
+/** Class that holds the log tags of the application. */
 public class LogTag {
     static final String APPLICATION = "WC:Application";
     public static final String UI = "WC:UI";
