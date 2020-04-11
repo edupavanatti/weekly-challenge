@@ -25,7 +25,8 @@ public class DialogFactory {
      *
      * @return Returns a Dialog created or null in case of error.
      */
-    public static AlertDialog createButtonDialog(final Context context) {
+    public static AlertDialog createDialog(final Context context,
+                                           final DialogUtils.MainActivityDialog dialogType) {
         final AlertDialog.Builder dialog = new AlertDialog.Builder(context);
         final DialogInterface.OnClickListener listener = new DialogInterface.OnClickListener() {
             @Override
@@ -34,12 +35,20 @@ public class DialogFactory {
             }
         };
         dialog.setCancelable(false);
-        dialog.setTitle(ResourceUtils.getString(R.string.dialog_title, context));
-        dialog.setMessage(ResourceUtils.getString(R.string.dialog_message, context));
-        dialog.setPositiveButton(ResourceUtils.getString(R.string.dialog_positive_button, context),
-                listener);
-        dialog.setNegativeButton(ResourceUtils.getString(R.string.dialog_negative_button, context),
-                listener);
+
+        // TODO transfer this check to a helper method.
+        if (dialogType == DialogUtils.MainActivityDialog.BUTTON_DIALOG) {
+                dialog.setTitle(ResourceUtils.getString(R.string.dialog_title, context));
+                dialog.setMessage(ResourceUtils.getString(R.string.dialog_message, context));
+                dialog.setPositiveButton(ResourceUtils.getString(R.string.dialog_positive_button,
+                        context), listener);
+                dialog.setNegativeButton(ResourceUtils.getString(R.string.dialog_negative_button,
+                        context), listener);
+        } else {
+            MainLog.e(LogTag.UI, "Could not set dialog information. 'dialogType' is invalid: "
+            + dialogType);
+        }
+
         return dialog.create();
     }
 
@@ -52,8 +61,8 @@ public class DialogFactory {
     public static void configureOneUIDialog(final AlertDialog dialog, final Context context) {
         final Window dialogWindow = dialog.getWindow();
         if (dialogWindow != null) {
-            dialogWindow.setBackgroundDrawable(ContextCompat.getDrawable(context,
-                    R.drawable.dialog_background));
+            dialogWindow.setBackgroundDrawable(ResourceUtils.getDrawable(R.drawable.dialog_background,
+                    context.getTheme(), context));
             dialogWindow.setGravity(Gravity.BOTTOM);
         } else {
             MainLog.e(LogTag.UI, "Failed to set gravity. Window is null.");

@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.weeklychallenge.dialog.DialogUtils;
 import com.example.weeklychallenge.util.ResourceUtils;
 import com.example.weeklychallenge.util.UIUtils;
 import com.example.weeklychallenge.MarginActivity;
@@ -43,7 +44,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(final View view) {
-        mPresenter.handleButtonClicked(view.getId());
+        // TODO change hardcoded buttonId values.
+        switch (view.getId()) {
+            case (R.id.firstButton):
+                mPresenter.handleButtonClicked(1);
+                break;
+            case (R.id.secondButton):
+                mPresenter.handleButtonClicked(2);
+                break;
+            case (R.id.thirdButton):
+                mPresenter.handleButtonClicked(3);
+                break;
+            default:
+                mPresenter.handleButtonClicked(0);
+                break;
+        }
     }
 
     @Override
@@ -54,7 +69,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void showButtonDialog() {
-        final AlertDialog buttonDialog = DialogFactory.createButtonDialog(this);
+        final AlertDialog buttonDialog = DialogFactory.createDialog(this,
+                DialogUtils.MainActivityDialog.BUTTON_DIALOG);
         DialogFactory.configureOneUIDialog(buttonDialog, this);
         buttonDialog.show();
     }
@@ -62,7 +78,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void loadNewScreen() {
         final Intent intent = new Intent(this, MarginActivity.class);
-        UIUtils.safeStartActivityForResult(this, intent, UIUtils.DEFAULT_REQUEST_CODE);
+        final boolean result =
+                UIUtils.safeStartActivityForResult(this, intent, UIUtils.DEFAULT_REQUEST_CODE);
+        if (result) {
+            MainLog.d(LogTag.UI, "New screen correctly loaded.");
+        } else {
+            MainLog.e(LogTag.UI, "Error loading new screen. Please try again.");
+        }
     }
 
     @Override

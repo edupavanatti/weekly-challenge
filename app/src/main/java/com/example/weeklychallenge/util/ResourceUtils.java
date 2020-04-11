@@ -13,6 +13,11 @@ import com.example.weeklychallenge.util.log.MainLog;
 public final class ResourceUtils {
 
     /**
+     * Global invalid value to be used by the application.
+     */
+    public static final int INVALID_VALUE = -1;
+
+    /**
      * Gets a specific string value from resources ('/res' folder).
      *
      * @param stringId the ID of the desired string value.
