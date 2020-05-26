@@ -11,17 +11,17 @@ public interface MainContract {
         /**
          * Method that shows a Toast when the first button is pressed.
          */
-        void showButtonToast();
+        //void showButtonToast(;
 
         /**
          * Method that shows a Dialog when the second button is pressed.
          */
-        void showButtonDialog();
+        //void showButtonDialog();
 
         /**
          * Method that loads a new Screen when the third button is pressed.
          */
-        void loadNewScreen();
+        //void loadNewScreen();
 
     }
 
@@ -35,6 +35,6 @@ public interface MainContract {
          *
          * @param buttonId The identification of each button.
          */
-        void handleButtonClicked(final int buttonId);
+        //void handleButtonClicked(final int buttonId);
     }
 }

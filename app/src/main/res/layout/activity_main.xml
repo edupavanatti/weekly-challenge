@@ -12,6 +12,7 @@
         android:layout_marginBottom="@dimen/button_margin"
         android:layout_marginRight="@dimen/button_margin"
         android:layout_marginLeft="@dimen/button_margin"
+        android:onClick="showButtonToast"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintBottom_toTopOf="@id/upper_guideline"/>
@@ -21,6 +22,7 @@
         android:id="@+id/secondButton"
         android:layout_marginRight="@dimen/button_margin"
         android:layout_marginLeft="@dimen/button_margin"
+        android:onClick="showButtonDialog"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/upper_guideline"
@@ -32,6 +34,7 @@
         android:layout_marginTop="@dimen/button_margin"
         android:layout_marginRight="@dimen/button_margin"
         android:layout_marginLeft="@dimen/button_margin"
+        android:onClick="loadNewScreen"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/lower_guideline"/>

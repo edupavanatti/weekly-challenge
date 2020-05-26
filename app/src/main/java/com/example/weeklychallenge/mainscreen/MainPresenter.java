@@ -15,6 +15,7 @@ class MainPresenter implements MainContract.Presenter {
         mView = view;
     }
 
+    /*
     @Override
     public void handleButtonClicked(final int buttonId) {
         final ButtonUtils.MainActivityButton mainActivityButton =
@@ -37,4 +38,5 @@ class MainPresenter implements MainContract.Presenter {
                 break;
         }
     }
+    */
 }

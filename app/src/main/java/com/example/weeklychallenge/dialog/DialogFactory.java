@@ -1,12 +1,14 @@
 package com.example.weeklychallenge.dialog;
 
 import android.app.AlertDialog;
+import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.os.Bundle;
 import android.view.Gravity;
 import android.view.Window;
 
-import androidx.core.content.ContextCompat;
+import androidx.fragment.app.DialogFragment;
 
 import com.example.weeklychallenge.R;
 import com.example.weeklychallenge.util.ResourceUtils;
@@ -16,7 +18,7 @@ import com.example.weeklychallenge.util.log.MainLog;
 /**
  * Factory used to create Dialogs for the application.
  */
-public class DialogFactory {
+public class DialogFactory extends DialogFragment {
 
     /**
      * Method that builds an application Dialog.
@@ -49,6 +51,23 @@ public class DialogFactory {
             + dialogType);
         }
 
+        return dialog.create();
+    }
+
+    @Override
+    public Dialog onCreateDialog(final Bundle savedInstance) {
+        final AlertDialog.Builder dialog = new AlertDialog.Builder(getActivity());
+        final DialogInterface.OnClickListener listener = new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(final DialogInterface dialog, final int which) {
+                dialog.dismiss();
+            }
+        };
+        dialog.setCancelable(false);
+        dialog.setTitle(R.string.dialog_title);
+        dialog.setMessage(R.string.dialog_message);
+        dialog.setPositiveButton(R.string.dialog_positive_button, listener);
+        dialog.setNegativeButton(R.string.dialog_negative_button, listener);
         return dialog.create();
     }
 
